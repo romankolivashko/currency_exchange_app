@@ -15,18 +15,19 @@ function getElements(response) {
   if (response) {
     //$('.showRate').text(`Converting from ${response.base_code} to ${response.target_code} will yield ${response.conversion_result}`);
     //$('#base-amount').val(response.conversion_rates);
+    console.log(response.result);
     $('#tgt-amount').val(response.conversion_result.toFixed(2));
 
   } else {
-    $('.showErrors').text(`There was an error: ${response}`);
+    console.log(response.result);
+    console.dir(response);
+    $('.showErrors').text(`Oh no, this is embarrasing! Let's try again. ${response.result}`);
   }
 }
 
 async function makeApiCall(baseCurr, tgtCurr, amount) {
   const response = await ExchangeService.getRate(baseCurr, tgtCurr, amount);
-  console.dir(response);
   getElements(response);
-  //return amount;
 }
 
 $(document).ready(function() {
