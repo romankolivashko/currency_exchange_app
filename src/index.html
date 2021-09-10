@@ -6,38 +6,47 @@
   <h2>Currency Exchange</h2>
   <hr>
   <div class="container">
-    <div class="jumbotron">    
-         
-        <h4>From</h4>
-        <select id="base-curr" class="form-control">
-          <option value="USD" name="United States Dollar" selected>United States Dollar (USD)</option>
-          <option value="EUR" name="EURO">EUR (EUR)</option>
-          <option value="AUD">Australia Dollars</option>
-          <option value="CAD">Canada Dollars</option>
-          <option value="CNY">China Yuan Renmimbi</option>
-          <option value="JPY">Japanese Yen (JPY)</option>
-          <option value="GBP">United Kingdom Pounds</option>
-          <option value="RUB">Russian Ruble (RUB)</option>
-        </select>
-     
-        <!-- <input value="1" id="tgt-amount" type="number" class="form-control">
-    -->
-        
-        <h4>To</h4>
-        <select id="tgt-curr" class="form-control">
-          <option value="EUR" name="EURO" selected>EUR (EUR)</option>
-          <option value="USD">United States Dollar (USD)</option>
-          <option value="AUD">Australia Dollars</option>
-          <option value="CAD">Canada Dollars</option>
-          <option value="CNY">China Yuan Renmimbi</option>
-          <option value="GBP">United Kingdom Pounds</option>
-          <option value="JPY">Japanese Yen (JPY)</option>
-          <option value="RUB">Russian Ruble (RUB)</option>
-        </select>
-
-
-        <h4>Amount</h4>
-        <input value="1" id="base-amount" type="number" min="0.00" step="0.01" class="form-control"> 
+    <div class="jumbotron">   
+      
+      <div class="row">
+        <div class="col-6 col-sm-3">
+          <h4>From</h4>
+          <select id="base-curr" class="form-control">
+            <option value="USD" name="United States Dollar" selected>United States Dollar (USD)</option>
+            <option value="EUR" name="EURO">EUR (EUR)</option>
+            <option value="AUD">Australia Dollars</option>
+            <option value="CAD">Canada Dollars</option>
+            <option value="CNY">China Yuan Renmimbi</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="GBP">United Kingdom Pounds</option>
+            <option value="RUB">Russian Ruble (RUB)</option>
+          </select>  
+        </div>
+        <div class="col-6 col-sm-3">
+          <h4>Amount</h4>
+          <input value="1" id="base-amount" type="number" min="0.00" step="0.01" class="form-control">     
+        </div>
+      
+        <!-- Force next columns to break to new line -->
+        <div class="w-100"></div>
+      
+        <div class="col-6 col-sm-3">
+          <h4>To</h4>
+          <select id="tgt-curr" class="form-control">
+            <option value="EUR" name="EURO" selected>EUR (EUR)</option>
+            <option value="USD">United States Dollar (USD)</option>
+            <option value="AUD">Australia Dollars</option>
+            <option value="CAD">Canada Dollars</option>
+            <option value="CNY">China Yuan Renmimbi</option>
+            <option value="GBP">United Kingdom Pounds</option>
+            <option value="JPY">Japanese Yen (JPY)</option>
+            <option value="RUB">Russian Ruble (RUB)</option>
+          </select>
+        </div>
+        <div class="col-6 col-sm-3">
+          <input value="1" id="tgt-amount" type="number" class="form-control">
+     </div>
+      </div>
 
     <button class="btn-success" id="getRates">Get rates</button>
     <div class="showRate"></div>
