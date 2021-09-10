@@ -1,3 +1,20 @@
+
 body {
-  background-color: lightblue;
+  background: url("../../assets/images/bg.jpg") center;
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 10%;
+  font-size: 18px;
+  font-weight: 600;
+  color: rgb(39, 32, 12);
+}
+
+.jumbotron {
+  /* background: url("../../assets/images/paper2-bg.jpg") center; */
+  /* z-index:2; */
+  width:auto;
+  background-size: cover;
+  box-shadow: 0 8px 12px 0 rgba(2, 8, 10, 0.472), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  opacity: 0.95;
 }

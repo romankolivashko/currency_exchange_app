@@ -5,7 +5,7 @@ import './css/styles.css';
 import ExchangeService from './services/rates-service.js';
 
 function clearFields() {
-  $('#base-amount').val("");
+  //$('#base-amount').val("");
   $('#tgt-amount').val("");
   $('.showErrors').text("");
   //$('.showRate').text("");
@@ -13,9 +13,10 @@ function clearFields() {
 
 function getElements(response) {
   if (response) {
-    $('.showRate').text(`Converting from ${response.base_code} to ${response.target_code} will yield ${response.conversion_result}`);
-    $('#base-amount').val();
-    $('#tgt-amount').val(response.conversion_result);
+    //$('.showRate').text(`Converting from ${response.base_code} to ${response.target_code} will yield ${response.conversion_result}`);
+    //$('#base-amount').val(response.conversion_rates);
+    $('#tgt-amount').val(response.conversion_result.toFixed(2));
+
   } else {
     $('.showErrors').text(`There was an error: ${response}`);
   }
