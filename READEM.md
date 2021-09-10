@@ -1,6 +1,6 @@
 # Currency Exchange App
 
-#### This app converts currency value utilzing exchange rate API.
+#### This app converts currency value utilzing [exchange rate API.](https://www.exchangerate-api.com/)
 
 #### By Roman Kolivashko
 
@@ -14,14 +14,18 @@
 * _Postman_
 
 ## Description
-THis application will let the user to type in an amount (in U.S. dollars) and then choose which currency it should be converted to (such as francs, marks, rupees, and so on). To determine the most recent exchange rate, the application will make an API call to the external exchange rate API.
+This application will let the user to type in an amount (U.S. dollars is default) and then choose which currency it should be converted to (such as russian rubles, british pounda, canadian dollars, and so on). To determine the most recent exchange rate, the application will make an API call to the external exchange rate API.
+
+#### Note: before project setup, you will need to obtain an API kew from [ExchangeRate-API website](https://www.exchangerate-api.com/) by providing email address and clicking "Get Free Key" button.
 
 ## Setup/Installation Requirements
 
+
 1. Click on "Code" button at top of GitHub repository. 
-2. Clone the repository: $ git clone https://github.com/romankolivashko/currency_exchange_app.git
+2. Clone the repository: `$ git clone https://github.com/romankolivashko/currency_exchange_app.git`
 3. Navigate to the currency_exchange_app/ directory on your computer
-4. To start a development server and view the project in the browser:
+4. Create .env file in root of your directory, append following to .env file: `API_KEY=<api_key> `. Note: `<api_key>` should be replaced with the actual key obtained from [ExchangeRate-API website](https://www.exchangerate-api.com/).
+5. To start a development server and run the project:
    * Navigate to currency_exchange_app/ in your command line
    * Run the command `npm install` to install dependencies
    * Optionally, run the commmand `npm run build` to make a bundle of the files

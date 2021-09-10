@@ -1,3 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic+Coding:wght@700&display=swap');
+
+h2 { 
+  font-size: 45px; 
+}
+
+h4 { 
+  font-size: 35px; 
+}
+
+.form-control, .btn {
+  font-size: 25px;
+} 
 
 body {
   background: url("../../assets/images/bg.jpg") center;
@@ -5,16 +18,22 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 10%;
-  font-size: 18px;
-  font-weight: 600;
+  font-family: 'Nanum Gothic Coding', monospace;
+  font-size: large;
+  /* font-weight: 400; */
   color: rgb(39, 32, 12);
 }
 
 .jumbotron {
-  /* background: url("../../assets/images/paper2-bg.jpg") center; */
-  /* z-index:2; */
+  font-size: 60px;
+  font-weight: 800;
+  background-color: #EDF5E1;
   width:auto;
   background-size: cover;
   box-shadow: 0 8px 12px 0 rgba(2, 8, 10, 0.472), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   opacity: 0.95;
+}
+
+.btn {
+  margin-top: 1.5em;
 }
