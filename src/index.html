@@ -1,11 +1,12 @@
 <html lang="en-US">
+
 <head>
   <title>Currency Exchange</title>
 </head>
-<body>
 
+<body>
   <div class="container">
-    <div class="jumbotron">   
+    <div class="jumbotron">
       <h2>Currency Exchange</h2>
       <hr>
       <div class="row">
@@ -20,17 +21,16 @@
             <option value="JPY">Japanese Yen (JPY)</option>
             <option value="GBP">United Kingdom Pounds</option>
             <option value="RUB">Russian Ruble (RUB)</option>
-            <option value="PUB">PUB fake currency (PUB)</option>
-          </select>  
+            <!-- use DOGE option to generate API err -->
+            <option value="DOGE">Invalid currency (DOGE)</option>
+          </select>
         </div>
         <div class="col">
           <h4>Amount</h4>
-          <input value="1" id="base-amount" type="number" min="0.00" step="0.01" class="form-control">     
+          <input value="1" id="base-amount" type="number" min="0.00" step="0.01" class="form-control">
         </div>
-      
         <!-- Force next columns to break to new line -->
         <div class="w-100"></div>
-      
         <div class="col">
           <h4>To</h4>
           <select id="tgt-curr" class="form-control">
@@ -42,18 +42,19 @@
             <option value="GBP">United Kingdom Pounds</option>
             <option value="JPY">Japanese Yen (JPY)</option>
             <option value="RUB">Russian Ruble (RUB)</option>
-            <option value="PUB">PUB fake currency (PUB)</option>
+            <!-- use DOGE option to generate API err -->
+            <option value="DOGE">Invalid currency (DOGE)</option>
           </select>
         </div>
         <div class="col">
           <h4>Amount</h4>
           <input value="1" id="tgt-amount" type="number" class="form-control">
-     </div>
+        </div>
       </div>
-
-    <button class="btn btn-success" id="getRates">Convert</button>
-    <div class="showErrors"></div>
-  </div>
+      <button class="btn btn-success" id="getRates">Convert</button>
+      <div class="showErrors"></div>
+    </div>
   </div>
 </body>
+
 </html>

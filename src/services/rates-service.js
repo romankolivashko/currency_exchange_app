@@ -3,25 +3,12 @@ export default class ExchangeService {
     try {
       const response = await fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/${baseCurr}/${tgtCurr}/${amount}`);
       if (!response.ok) {
-        throw Error(response.status);
+        let errCode = response.status;
+        throw Error(errCode);
       }
       return response.json();
     } catch(error) {
       return error.message;
     }
   }
-
-  // static async getRateUSD() {
-  //   try {
-  //     const response = await fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/latest/USD`);
-  //     if (!response.ok) {
-  //       throw Error(response.statusText);
-  //     }
-  //     return response.json();
-  //   } catch(error) {
-  //     return error.message;
-  //   }
-  // }
-
-
 }
