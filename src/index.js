@@ -13,7 +13,7 @@ function getElements(response) {
   if (response.result === "success") {
     $("#tgt-amount").val(response.conversion_result.toFixed(2));
   } else {
-    $(".showErrors").text(`This is embarrasing! Code: ${response}`);
+    $(".showErrors").text(`This is embarrassing! Code: ${response}`);
   }
 }
 
