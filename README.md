@@ -17,7 +17,7 @@
 ## Description
 This application will let user enter currency amount (U.S. dollars is default) and then choose which currency it should be converted to (such as Russian rubles, British pound, Canadian dollars, and so on). To determine the most recent exchange rate, the application will make an API call to the currency exchange API.
 
-#### Note: before running this project, you will need to obtain an API kew from [ExchangeRate-API website](https://www.exchangerate-api.com/) by providing email address and clicking "Get Free Key" button.
+#### Note: before running this project, you will need to obtain an API kew from [ExchangeRate-API website](https://www.exchangerate-api.com/), signup, provide email, find "Get Free Key" option.
 
 ## Setup/Installation Requirements
 
